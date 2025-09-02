@@ -28,7 +28,7 @@ public class CalculaAlturas {
             System.out.print("Digite a altura da pessoa " + i + ": ");
             double altura = input.nextDouble();
             System.out.print("Digite o sexo da pessoa " + i + " (M/F): ");
-            String sexo = input.next();
+            char sexo = input.next().charAt(0);
 
             if (altura > maiorAltura) {
                 maiorAltura = altura;
@@ -36,7 +36,7 @@ public class CalculaAlturas {
             if (altura < menorAltura) {
                 menorAltura = altura;
             }
-            if (sexo == "M" || sexo == "m") {
+            if (sexo ==  'M' || sexo == 'm' ) {
                 somaAlturasHomens += altura;
                 numHomens++;
             } else {
