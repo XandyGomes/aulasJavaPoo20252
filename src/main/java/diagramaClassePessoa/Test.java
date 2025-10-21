@@ -17,6 +17,7 @@ public class Test {
         colab1.setCpf("123456789");
         colab1.setNasc(3,10,1980);
         
+        
         Parceiro parc1 = new Parceiro();
         parc1.setNome("Fatec");
         parc1.setCnpj("321654987");
